@@ -4,7 +4,7 @@ font-family: Arial, sans-serif;
 
 color: #333;
 
-background-color: #f9f9f9;
+background-color:#6f4e37
 
 margin: 0;
 
@@ -13,3 +13,31 @@ padding: 0;
 line-height: 1.6;
 
 }
+
+header {
+
+background-color:#d4a373
+
+color: white;
+
+padding: 20px;
+
+text-align: center;
+
+}
+
+
+header h1 {
+
+margin: 0;
+
+}
+
+
+nav a {
+
+color: white;
+
+text-decoration: none;
+
+margin: 0 10px;
