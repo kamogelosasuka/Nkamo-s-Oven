@@ -69,6 +69,15 @@ main img {
     transition: 0.3s;
 }
 
+/* Image Hover Effect */
+.hover-zoom {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.1);
+}
+
 .btn:hover {
     background-color: #a0522d;
 }
