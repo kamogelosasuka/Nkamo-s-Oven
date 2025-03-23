@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Nkamo's Oven</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    
+    <!-- Link to Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -31,30 +35,46 @@
 
     <!-- Menu Section -->
     <main class="container my-5">
-        <h2 class="text-center">Our Delicious Menu</h2>
+        <h2 class="text-center">🍰 Our Delicious Menu 🍪</h2>
 
         <div class="row">
             <!-- Cake -->
             <div class="col-md-4 text-center">
-                <img src="images/cake.jpg" alt="Delicious Cake" class="img-fluid rounded shadow">
-                <h4>Delicious Cake</h4>
-              <h4>We do it the wa you like more especially birthday or any special occation</h4>
-                <p>Price:P250.00</p>
+                <div class="card shadow-lg border-0">
+                    <img src="images/cake.jpg" alt="Delicious Cake" class="card-img-top hover-zoom">
+                    <div class="card-body">
+                        <h4 class="card-title">Delicious Cake 🎂</h4>
+                        <p class="card-text">Custom cakes for birthdays and special occasions.</p>
+                        <p class="price"><strong>P250.00</strong></p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
             </div>
 
             <!-- Cookies -->
             <div class="col-md-4 text-center">
-                <img src="images/cookies.jpg" alt="Freshly Baked Cookies" class="img-fluid rounded shadow">
-                <h4>Freshly Baked Cookies</h4>
-                <p>Price: P7.00</p>
+                <div class="card shadow-lg border-0">
+                    <img src="images/cookies.jpg" alt="Freshly Baked Cookies" class="card-img-top hover-zoom">
+                    <div class="card-body">
+                        <h4 class="card-title">Freshly Baked Cookies 🍪</h4>
+                        <p class="card-text">Crunchy and sweet, baked to perfection.</p>
+                        <p class="price"><strong>P7.00 each</strong></p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
             </div>
 
             <!-- Cupcakes -->
             <div class="col-md-4 text-center">
-                <img src="images/cupcakes.jpg" alt="Tasty Cupcakes" class="img-fluid rounded shadow">
-                <h4>Tasty Cupcakes</h4>
-              <h4>We can add your face the way you like it</h4>
-                <p>Price: P20.00</p>
+                <div class="card shadow-lg border-0">
+                    <img src="images/cupcakes.jpg" alt="Tasty Cupcakes" class="card-img-top hover-zoom">
+                    <div class="card-body">
+                        <h4 class="card-title">Tasty Cupcakes 🧁</h4>
+                        <p class="card-text">Custom designs, even with your face on them!</p>
+                        <p class="price"><strong>P20.00</strong></p>
+                        <a href="#" class="btn btn-primary">Place Your Order Now</a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
