@@ -1,66 +1,75 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nkamo's Oven</title>
 
-<meta charset="UTF-8">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>About Me - Nkamo's Oven</title>
-
-  <!-- Bootstrap CSS -->
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="styles.css">
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
 <body>
 
-<header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Nkamo's Oven Logo" height="40"> Nkamo's Oven
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<h1>Nkamo's Oven</h1>
+    <!-- About Section -->
+    <main class="container my-5">
+        <h2 class="text-center">About Nkamo's Oven</h2>
+        
+        <div class="row align-items-center">
+            <!-- Bakery Image -->
+            <div class="col-md-6">
+                <img src="images/bakery-interior.jpg" alt="Nkamo's Oven Bakery" class="img-fluid rounded shadow">
+            </div>
 
-<nav>
+            <!-- About Text -->
+            <div class="col-md-6">
+                <h4>Welcome to Nkamo's Oven, where every bite tells a story of passion and perfection! 🍰</h4>
+                <p>At Nkamo’s Oven, we believe that baking is an art, and each creation is made with love, care, and only the finest ingredients. From our warm, golden-brown cookies to our elegant cakes, every treat is designed to bring joy to our customers.</p>
+                
+                <h4>🎂 What We Offer:</h4>
+                <ul>
+                    <li>Custom cakes for birthdays, weddings, and special occasions</li>
+                    <li>Freshly baked cookies, biscuits, and pastries</li>
+                    <li>Delicious cupcakes with unique flavors</li>
+                    <li>Quality ingredients and home-style baking</li>
+                </ul>
 
-<a href="index.html">Home</a> |
+                <p>We take pride in making every bite as delicious as the last, ensuring that you always leave with a smile. Whether you’re celebrating a special moment or just craving a sweet treat, Nkamo’s Oven is here for you!</p>
+                
+                <p>Come visit us at <strong>51598, Maruapula, Gaborone</strong> or follow us on <a href="https://facebook.com/nkamosoven" target="_blank">Facebook</a> and <a href="https://instagram.com/nkamosoven" target="_blank">Instagram</a> to stay updated!</p>
+            </div>
+        </div>
+    </main>
 
-<a href="about.html">About</a> |
+    <!-- Footer -->
+    <footer class="text-center p-3 bg-dark text-white">
+        <p>&copy; 2025 Nkamo's Oven. All Rights Reserved.</p>
+    </footer>
 
-<a href="contact.html">Contact</a>
-
-</nav>
-
-</header>
-
-<main>
-
- <main class="container my-5">
-    <h2>About Nkamo's Oven</h2>
-    <p>Welcome to <strong>Nkamo's Oven</strong>, where every bite tells a story of passion and perfection.</p>
-    <p>Our bakery is dedicated to bringing you the freshest, most delicious cakes, cookies, and pastries, all made with love and the finest ingredients.</p>
-    <img src="images/bakery.jpg" alt="Bakery interior" class="img-fluid rounded shadow mt-3">
-</main> 
-
-  <!-- Bootstrap JS and dependencies -->
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-  
-</ul>
-
-  
-</main>
-
-
-<footer>
-
-<p>&copy; 2025 Nkamo's Oven</p>
-
-</footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
