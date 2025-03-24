@@ -1,8 +1,15 @@
 body {
-    font-family: 'Poppins', Arial, sans-serif; /* More elegant font */
-    color: #4a2c2a; /* Warm brown bakery theme */
-    background-color: #fdf7f1; /* Light beige background */
-    margin: 0;
-    padding: 0;
-    line-height: 1.8;
+
+font-family: Arial, sans-serif;
+
+color: #333;
+
+background-color: #f9f9f9;
+
+margin: 0;
+
+padding: 0;
+
+line-height: 1.6;
+    
 }
