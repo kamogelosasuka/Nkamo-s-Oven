@@ -1,7 +1,7 @@
 body {
-    font-family: 'Poppins', Arial, sans-serif;
-    color: #4a2c2a;
-    background-color: #fdf7f1;
+    font-family: 'Poppins', Arial, sans-serif; /* More elegant font */
+    color: #4a2c2a; /* Warm brown bakery theme */
+    background-color: #fdf7f1; /* Light beige background */
     margin: 0;
     padding: 0;
     line-height: 1.8;
@@ -9,7 +9,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #8B4513;
+    background-color: #8B4513; /* Rich brown for bakery feel */
     color: white;
     padding: 20px;
     text-align: center;
@@ -21,24 +21,23 @@ header h1 {
 }
 
 /* Navbar Styling */
-.navbar {
-    background-color: #a0522d !important;
+nav {
+    background-color: #a0522d; /* Slightly lighter brown */
+    padding: 10px 0;
+    text-align: center;
 }
 
-.navbar-brand img {
-    height: 50px;
-    margin-right: 10px;
-}
-
-.nav-link {
+nav a {
+    color: white;
+    text-decoration: none;
     font-size: 1.2em;
     padding: 10px 15px;
     transition: 0.3s;
-    color: white !important;
 }
 
-.nav-link:hover {
-    color: #ffcc80 !important;
+nav a:hover {
+    color: #ffcc80; /* Warm orange glow */
+    text-decoration: underline;
 }
 
 /* Main Content */
@@ -49,45 +48,28 @@ main {
     text-align: center;
 }
 
-.card {
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
+main img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #8B4513; /* Brown border */
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-.card:hover {
-    transform: scale(1.05);
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #8B4513; /* Bakery Brown */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-.card-img-top {
-    height: 250px;
-    object-fit: cover;
-    border-bottom: 5px solid #8B4513;
-}
-
-.card-body {
-    background-color: #fff;
-    padding: 15px;
-}
-
-.card-title {
-    font-size: 1.5em;
-    color: #8B4513;
-}
-
-.price {
-    font-size: 1.3em;
-    color: #d35400;
-    font-weight: bold;
-}
-
-.btn-primary {
-    background-color: #8B4513;
-    border: none;
-    font-size: 1.2em;
-}
-
-.btn-primary:hover {
+.btn:hover {
     background-color: #a0522d;
 }
 
@@ -97,5 +79,8 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     font-size: 1em;
 }
