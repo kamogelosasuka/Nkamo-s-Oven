@@ -20,6 +20,23 @@ header h1 {
     font-size: 2.2em;
 }
 
+h1 {
+    font-size: 3rem; /* Bigger size */
+    text-transform: uppercase; /* Convert text to uppercase */
+    text-align: center; /* Center text */
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #ff4500; /* Orange-Red */
+}
+
 /* Navbar Styling */
 nav {
     background-color: #a0522d; /* Slightly lighter brown */
