@@ -1,6 +1,224 @@
-<form> 
-  First name:<br>
-  <input type="text"name="firstname"><br> 
-  Last name:<br> 
-  <input type="text" name="lastname">
-</form
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nkamo's Oven - Cake Order Feedback</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"> Nkamo's Oven</div>
+            <div class="subtitle">Order Feedback</div>
+            <p>Thank you for choosing Nkamo's Oven for your special occasion! We'd love to hear about your experience.</p>
+        </header>
+        
+        <form id="feedbackForm">
+            <div class="section">
+                <h2>Order Details</h2>
+                <div class="form-group">
+                    <label for="orderDate">Order Date:</label>
+                    <input type="date" id="orderDate" name="orderDate" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>What was the occasion?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="occasion" value="Birthday"> Birthday</label>
+                        <label><input type="radio" name="occasion" value="Wedding"> Wedding</label>
+                        <label><input type="radio" name="occasion" value="Anniversary"> Anniversary</label>
+                        <label><input type="radio" name="occasion" value="Other"> Other</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="otherOccasion">If other, please specify:</label>
+                    <input type="text" id="otherOccasion" name="otherOccasion">
+                </div>
+                
+                <div class="form-group">
+                    <label>How did you receive your order?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="receiveMethod" value="In-Store Pickup"> In-Store Pickup</label>
+                        <label><input type="radio" name="receiveMethod" value="Home Delivery"> Home Delivery</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Your Cake Details</h2>
+                <div class="form-group">
+                    <label>What type of cake did you order?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="cakeType" value="Chocolate"> Chocolate</label>
+                        <label><input type="radio" name="cakeType" value="Vanilla"> Vanilla</label>
+                        <label><input type="radio" name="cakeType" value="Red Velvet"> Red Velvet</label>
+                        <label><input type="radio" name="cakeType" value="Carrot"> Carrot</label>
+                        <label><input type="radio" name="cakeType" value="Fruit"> Fruit</label>
+                        <label><input type="radio" name="cakeType" value="Custom"> Custom Flavor</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customFlavor">If custom, please describe:</label>
+                    <input type="text" id="customFlavor" name="customFlavor">
+                </div>
+                
+                <div class="form-group">
+                    <label>What size was your cake?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="cakeSize" value="Small"> Small (6")</label>
+                        <label><input type="radio" name="cakeSize" value="Medium"> Medium (8")</label>
+                        <label><input type="radio" name="cakeSize" value="Large"> Large (10")</label>
+                        <label><input type="radio" name="cakeSize" value="X-Large"> X-Large (12"+)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Rate Your Experience</h2>
+                
+                <div class="rating">
+                    <div class="rating-item">
+                        <div class="rating-title">Cake Taste:</div>
+                        <div class="rating-options">
+                            <label><input type="radio" name="cakeTaste" value="Excellent"> Excellent</label>
+                            <label><input type="radio" name="cakeTaste" value="Very Good"> Very Good</label>
+                            <label><input type="radio" name="cakeTaste" value="Good"> Good</label>
+                            <label><input type="radio" name="cakeTaste" value="Fair"> Fair</label>
+                            <label><input type="radio" name="cakeTaste" value="Poor"> Poor</label>
+                        </div>
+                    </div>
+                    
+                    <div class="rating-item">
+                        <div class="rating-title">Cake Appearance:</div>
+                        <div class="rating-options">
+                            <label><input type="radio" name="cakeAppearance" value="Excellent"> Excellent</label>
+                            <label><input type="radio" name="cakeAppearance" value="Very Good"> Very Good</label>
+                            <label><input type="radio" name="cakeAppearance" value="Good"> Good</label>
+                            <label><input type="radio" name="cakeAppearance" value="Fair"> Fair</label>
+                            <label><input type="radio" name="cakeAppearance" value="Poor"> Poor</label>
+                        </div>
+                    </div>
+                    
+                    <div class="rating-item">
+                        <div class="rating-title">Order Process:</div>
+                        <div class="rating-options">
+                            <label><input type="radio" name="orderProcess" value="Excellent"> Excellent</label>
+                            <label><input type="radio" name="orderProcess" value="Very Good"> Very Good</label>
+                            <label><input type="radio" name="orderProcess" value="Good"> Good</label>
+                            <label><input type="radio" name="orderProcess" value="Fair"> Fair</label>
+                            <label><input type="radio" name="orderProcess" value="Poor"> Poor</label>
+                        </div>
+                    </div>
+                    
+                    <div class="rating-item">
+                        <div class="rating-title">Delivery/Pickup Experience:</div>
+                        <div class="rating-options">
+                            <label><input type="radio" name="deliveryExperience" value="Excellent"> Excellent</label>
+                            <label><input type="radio" name="deliveryExperience" value="Very Good"> Very Good</label>
+                            <label><input type="radio" name="deliveryExperience" value="Good"> Good</label>
+                            <label><input type="radio" name="deliveryExperience" value="Fair"> Fair</label>
+                            <label><input type="radio" name="deliveryExperience" value="Poor"> Poor</label>
+                        </div>
+                    </div>
+                    
+                    <div class="rating-item">
+                        <div class="rating-title">Value for Money:</div>
+                        <div class="rating-options">
+                            <label><input type="radio" name="valueForMoney" value="Excellent"> Excellent</label>
+                            <label><input type="radio" name="valueForMoney" value="Very Good"> Very Good</label>
+                            <label><input type="radio" name="valueForMoney" value="Good"> Good</label>
+                            <label><input type="radio" name="valueForMoney" value="Fair"> Fair</label>
+                            <label><input type="radio" name="valueForMoney" value="Poor"> Poor</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Tell Us More</h2>
+                <div class="form-group">
+                    <label for="likeMost">What did you like most about your cake?</label>
+                    <textarea id="likeMost" name="likeMost"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="improvements">Was there anything that could have been improved?</label>
+                    <textarea id="improvements" name="improvements"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Would you order from us again for your next special occasion?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="orderAgain" value="Definitely"> Definitely</label>
+                        <label><input type="radio" name="orderAgain" value="Probably"> Probably</label>
+                        <label><input type="radio" name="orderAgain" value="Not Sure"> Not Sure</label>
+                        <label><input type="radio" name="orderAgain" value="Probably Not"> Probably Not</label>
+                        <label><input type="radio" name="orderAgain" value="Definitely Not"> Definitely Not</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>How did you hear about Nkamo's Oven?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="hearAbout" value="Search Engine"> Search Engine</label>
+                        <label><input type="radio" name="hearAbout" value="Social Media"> Social Media</label>
+                        <label><input type="radio" name="hearAbout" value="Friend/Family"> Friend/Family</label>
+                        <label><input type="radio" name="hearAbout" value="Other"> Other</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Contact Information</h2>
+                <div class="form-group">
+                    <label for="firstName">First name:</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last name:</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="telephone">Telephone:</label>
+                    <input type="tel" id="telephone" name="telephone">
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <label><input type="checkbox" name="consent" value="Yes"> I consent to being contacted about my feedback</label>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <label><input type="checkbox" name="newsletter" value="Yes"> Subscribe to our newsletter for promotions and special offers</label>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <label><input type="checkbox" name="reminder" value="Yes"> Remind me next year about cake options for this occasion</label>
+                </div>
+            </div>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+        
+        <footer>
+            <p>&copy; 2025 Nkamo's Oven. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your feedback! We appreciate your time and will use your comments to improve our services.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
