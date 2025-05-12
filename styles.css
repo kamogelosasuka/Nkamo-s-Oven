@@ -1,109 +1,211 @@
+/* Global Body Styling with Cupcake Background */
 body {
-    font-family: 'Poppins', Arial, sans-serif; /* More elegant font */
-    color: #4a2c2a; /* Warm brown bakery theme */
-    background-color: #fdf7f1; /* Light beige background */
-    margin: 0;
-    padding: 0;
-    line-height: 1.8;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #4a2c2a;
+  background: url('images/cupcake-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  position: relative;
+}
+
+/* Soft overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: -1;
 }
 
 /* Header Styling */
 header {
-    background-color: #8B4513; /* Rich brown for bakery feel */
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #8B4513;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.2em;
+  margin: 0;
+  font-size: 2.2em;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 h1 {
-    font-size: 3rem; /* Bigger size */
-    text-transform: uppercase; /* Convert text to uppercase */
-    text-align: center; /* Center text */
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 
 h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #5e3023;
 }
 
 h3 {
-    font-size: 2rem;
-    color: #ff4500; /* Orange-Red */
+  font-size: 2rem;
+  color: #e67e22;
 }
 
 /* Navbar Styling */
 nav {
-    background-color: #a0522d; /* Slightly lighter brown */
-    padding: 10px 0;
-    text-align: center;
+  background-color: #a0522d;
+  padding: 10px 0;
+  text-align: center;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-    padding: 10px 15px;
-    transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  transition: 0.3s;
 }
 
 nav a:hover {
-    color: #ffcc80; /* Warm orange glow */
-    text-decoration: underline;
+  color: #ffcc80;
+  text-decoration: underline;
 }
 
-/* Main Content */
+/* Main Content Area */
 main {
-    background-color: #fff8e1; /* Light yellow */
-    padding: 20px;
-    border-radius: 10px;
+  background-color: #fff8e1;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 30px auto;
+  border-radius: 10px;
+  text-align: center;
 }
 
-main {
-    padding: 30px;
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
-}
-
+/* Image Styling */
 main img {
-    max-width: 80%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border: 5px solid #8B4513; /* Brown border */
-    border-radius: 15px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border: 5px solid #8B4513;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+main img:hover {
+  transform: scale(1.03);
 }
 
 /* Buttons */
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    color: white;
-    background-color: #8B4513; /* Bakery Brown */
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #8B4513;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .btn:hover {
-    background-color: #a0522d;
+  background-color: #a0522d;
 }
 
-/* Footer */
+.btn-success {
+  background-color: #5cb85c;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #4cae4c;
+}
+
+.btn-secondary {
+  background-color: #777;
+  border: none;
+}
+
+/* Form Styling for Feedback & Order */
+form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+form .form-label {
+  font-weight: 500;
+  color: #3b1e1e;
+}
+
+form .form-control, form .form-select {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #7b3e1d;
+}
+
+/* Thank You Page Styling */
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+}
+
+.thank-you h1 {
+  color: #28a745;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.thank-you p {
+  font-size: 1.2rem;
+}
+
+/* Cards for Product Display */
+.card {
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Footer Styling */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 1em;
+  background-color: #4a2c2a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 1em;
+  margin-top: 40px;
 }
