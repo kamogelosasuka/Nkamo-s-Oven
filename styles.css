@@ -160,7 +160,44 @@ legend {
   font-weight: 600;
   color: #7b3e1d;
 }
-
+ /* Additional styling for the form layout */
+    .form-group {
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .form-label {
+      font-weight: 500;
+      text-align: right;
+      padding-right: 15px;
+      margin-bottom: 0;
+      width: 30%;
+    }
+    .input-container {
+      width: 70%;
+    }
+    /* Make sure form maintains left-right layout on most screens */
+    @media (min-width: 576px) {
+      .form-container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+    }
+    /* Only stack on very small mobile screens */
+    @media (max-width: 575px) {
+      .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .form-label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0.5rem;
+      }
+      .input-container {
+        width: 100%;
+      }
 /* Thank You Page Styling */
 .thank-you {
   display: flex;
