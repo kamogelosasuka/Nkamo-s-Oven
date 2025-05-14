@@ -1,120 +1,141 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    
 <head>
-    
-    <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Menu - Nkamo's Oven</title>
-    
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <!-- Link 
-to Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-</head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Nkamo's Oven</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">     
-        <div class="container">   
-            <a class="navbar-brand" href="index.html">    
-                <img src="images/logo.png" alt="Nkamo's Oven Logo" height="50"> 
-                Nkamo's Oven
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Nkamo's Oven Logo" height="50"> Nkamo's Oven
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Menu Section -->
-    <main class="container my-5">
-        <h2 class="text-center">🍰 Our Delicious Menu 🍪</h2>
+  <main class="container my-5">
+    <h2 class="text-center">🍰 Our Delicious Menu 🍪</h2>
 
-       <div class="row align-items-center mb-5">
+    <!-- Product: Vanilla Cake -->
+    <div class="row align-items-center mb-5">
       <div class="col-md-6">
         <img src="https://juliemarieeats.com/wp-content/uploads/2024/01/Classic-Vanilla-Birthday-Cake-6-scaled.jpg" class="img-fluid rounded shadow" alt="Classic Vanilla Cake">
       </div>
       <div class="col-md-6">
         <h4>Classic Vanilla Cake 🎂</h4>
-        <p>Soft, fluffy vanilla cake layered with creamy buttercream frosting. Perfect for birthdays and special occasions.</p>
+        <p>A timeless classic! Moist vanilla sponge layered with velvety buttercream, perfect for birthdays, celebrations, or any sweet moment worth remembering.</p>
         <p><strong>Price: P250.00</strong></p>
-        <a href="order.html" class="btn btn-primary mt-3">Order Now</a>
+        <select id="vanillaOptions" class="form-select mb-2">
+          <option value="Classic Vanilla">Classic Vanilla</option>
+          <option value="Vanilla with Fruit">Vanilla with Fruit</option>
+          <option value="Double-Layer Vanilla">Double-Layer Vanilla</option>
+          <option value="Gluten-Free Vanilla">Gluten-Free Vanilla</option>
+        </select>
+        <a href="#" onclick="orderNow('Vanilla Cake', 'vanillaOptions')" class="btn btn-primary">Order Now</a>
       </div>
     </div>
 
+    <!-- Product: Buttercream Cake -->
     <div class="row align-items-center mb-5">
       <div class="col-md-6">
         <img src="https://phoenixsweets.com.au/cdn/shop/files/Watermark-20231015_134644_984.jpg?v=1698210740&width=493" class="img-fluid rounded shadow" alt="Buttercream Cake">
       </div>
       <div class="col-md-6">
-        <h4>Butter cream Cake 🍰</h4>
-        <p>Delicious buttercream cake with rich buttercream frosting and layers of silky sponge. A popular choice for any kind of happiness!</p>
+        <h4>Buttercream Cake 🍰</h4>
+        <p>Dreamy layers of golden sponge wrapped in rich, silky buttercream. Whether it's a celebration or self-care Sunday—this cake says “you deserve it!”</p>
         <p><strong>Price: P300.00</strong></p>
-        <a href="order.html" class="btn btn-primary mt-3">Order Now</a>
+        <select id="butterOptions" class="form-select mb-2">
+          <option value="Classic Buttercream">Classic Buttercream</option>
+          <option value="Chocolate Buttercream">Chocolate Buttercream</option>
+          <option value="Fruit-Topped Buttercream">Fruit-Topped Buttercream</option>
+        </select>
+        <a href="#" onclick="orderNow('Buttercream Cake', 'butterOptions')" class="btn btn-primary">Order Now</a>
       </div>
     </div>
 
+    <!-- Product: Red Velvet -->
     <div class="row align-items-center mb-5">
       <div class="col-md-6">
         <img src="https://www.afarmgirlsdabbles.com/wp-content/uploads/2025/02/Red-Velvet-Cake_0014s.jpg" class="img-fluid rounded shadow" alt="Red Velvet Cake">
       </div>
       <div class="col-md-6">
         <h4>Red Velvet Cake ❤️</h4>
-        <p>Moist red velvet cake topped with smooth cream cheese frosting, elegant for every event.</p>
+        <p>Luxuriously moist red velvet with a hint of cocoa, finished with creamy cheese frosting. Classy, bold, and always unforgettable.</p>
         <p><strong>Price: P280.00</strong></p>
-        <a href="order.html" class="btn btn-primary mt-3">Order Now</a>
+        <select id="velvetOptions" class="form-select mb-2">
+          <option value="Classic Red Velvet">Classic Red Velvet</option>
+          <option value="Mini Red Velvet">Mini Red Velvet</option>
+          <option value="Heart-Shaped Red Velvet">Heart-Shaped Red Velvet</option>
+        </select>
+        <a href="#" onclick="orderNow('Red Velvet Cake', 'velvetOptions')" class="btn btn-primary">Order Now</a>
       </div>
     </div>
 
+    <!-- Product: Cupcakes -->
     <div class="row align-items-center mb-5">
       <div class="col-md-6">
         <img src="https://www.crazyforcrust.com/wp-content/uploads/2021/01/perfect-vanilla-cupcakes-2-768x1152.jpg" class="img-fluid rounded shadow" alt="Vanilla Cupcakes">
       </div>
       <div class="col-md-6">
         <h4>Vanilla Cupcakes 🧁</h4>
-        <p>Light, fluffy vanilla cupcakes topped with luscious creamy buttercream. Customizable designs available!</p>
+        <p>Fluffy vanilla bites crowned with swirls of soft buttercream. Order them as-is or let us decorate with your face, name, or theme!</p>
         <p><strong>Price: P15.00 each</strong></p>
-        <a href="order.html" class="btn btn-primary mt-3">Order Now</a>
+        <select id="cupcakeOptions" class="form-select mb-2">
+          <option value="Plain Vanilla Cupcakes">Plain Vanilla Cupcakes</option>
+          <option value="Decorated Cupcakes">Decorated Cupcakes</option>
+          <option value="Custom-Design Cupcakes">Custom-Design Cupcakes</option>
+        </select>
+        <a href="#" onclick="orderNow('Vanilla Cupcakes', 'cupcakeOptions')" class="btn btn-primary">Order Now</a>
       </div>
     </div>
 
+    <!-- Product: Cookies -->
     <div class="row align-items-center mb-5">
       <div class="col-md-6">
         <img src="https://cafedelites.com/wp-content/uploads/2017/04/Peanut-Butter-Chocolate-Chip-Cookies-IMAGE-37.jpg" class="img-fluid rounded shadow" alt="Peanut Butter Cookies">
       </div>
       <div class="col-md-6">
-        <h4>Peanut butter cookies🥜</h4>
-        <p>Soft, nutty, and packed with rich peanut butter flavor. A timeless favorite!</p>
+        <h4>Peanut Butter Cookies 🥜</h4>
+        <p>Soft-baked and golden, our peanut butter cookies are packed with nutty goodness in every bite. Crumbly, chewy, and truly addictive.</p>
         <p><strong>Price: P5.00 each</strong></p>
-        <a href="order.html" class="btn btn-primary mt-3">Order Now</a>
-               </div>
-            </div>
-        </div>
-    </main>
+        <select id="cookieOptions" class="form-select mb-2">
+          <option value="Classic PB Cookie">Classic PB Cookie</option>
+          <option value="PB with Choc Chips">PB with Choc Chips</option>
+          <option value="Mini Peanut Cookies">Mini Peanut Cookies</option>
+        </select>
+        <a href="#" onclick="orderNow('Peanut Butter Cookies', 'cookieOptions')" class="btn btn-primary">Order Now</a>
+      </div>
+    </div>
+  </main>
 
-    <!-- Footer -->
-    <footer class="text-center p-3 bg-dark text-white">
-        <p>&copy; 2025 Nkamo's Oven. All Rights Reserved.</p>
-    </footer>
+  <footer class="text-center p-3 bg-dark text-white">
+    <p>&copy; 2025 Nkamo's Oven. All Rights Reserved.</p>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script>
+    function orderNow(product, selectId) {
+      const choice = document.getElementById(selectId).value;
+      const fullProduct = `${product} - ${choice}`;
+      window.location.href = `order.html?product=${encodeURIComponent(fullProduct)}`;
+    }
+  </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
